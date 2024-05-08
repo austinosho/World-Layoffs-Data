@@ -1,4 +1,4 @@
--- Data Cleaning Report: World Layoff Data 2021
+-- Data Cleaning Report: World Layoffs Data 
 
 -- Objective: Prepare the World Layoff Data 2021 for exploratory data analysis (EDA) by addressing duplicates, inconsistencies, null values, and unnecessary columns.
 
