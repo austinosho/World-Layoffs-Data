@@ -128,3 +128,27 @@ FROM Layoffs_Rank
 WHERE years IS NOT NULL
 ORDER BY ranking;
 
+-- Uber had the highest layoffs in 2020, followed by Booking.com.
+-- Bytedance had the highest layoffs in 2021, followed by Katerra.
+-- Meta had the highest layoffs in 2022, followed by Amazon.
+-- Google had the highest layoffs in 2023 up to the date in the data, followed by Microsoft.
+
+-- Let's see the top 5 layoffs per year
+WITH Layoffs_Rank AS(
+    SELECT company,
+    YEAR(`date`) AS years,
+    SUM(total_laid_off) as total_laid_off
+    FROM layoffs_clone2
+    GROUP BY 1,2
+    ORDER BY 3 DESC
+    ), 
+Company_Year_Rank AS(
+    SELECT *, 
+    DENSE_RANK() OVER(PARTITION BY years ORDER BY total_laid_off DESC) AS ranking
+    FROM Layoffs_Rank
+    WHERE years IS NOT NULL
+    ORDER BY ranking)
+SELECT * FROM 
+Company_Year_Rank
+WHERE ranking <= 5
+ORDER BY years;
