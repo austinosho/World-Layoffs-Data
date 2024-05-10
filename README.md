@@ -14,7 +14,7 @@ The EDA section explores various aspects of the data, including the distribution
 ## Dataset Description
 The dataset contains information about layoffs worldwide for the year 2020 - 2023, including details such as company name, industry, location, total layoffs, percentage of layoffs, date, and country.
 
-## Data Set Used
+## Dataset Used
 - [World Layoffs Data](layoffs.csv)
 
 ## Tools
