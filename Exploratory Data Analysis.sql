@@ -103,7 +103,7 @@ FROM (SELECT SUBSTRING(`date`, 1,7) AS `MONTH`,
 -- 1. 2020 had a high number of layoffs, probably due to COVID-19.
 -- 2. 2021 was a significantly better year, with only 15,823 additional layoffs compared to 80,998 in 2020.
 -- 3. 2022 also had a high number of layoffs, particularly in November just before the holidays.
--- 4. 2023 had a devastating number of layoffs.
+-- 4. 2023 already has a devastating number of layoffs.
 
 -- Let's have a look at the companies and their layoff data per year
 SELECT company,
