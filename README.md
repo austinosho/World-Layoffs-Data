@@ -20,3 +20,7 @@ The dataset contains information about layoffs worldwide for the year 2020 - 202
 ## Tools
 - SQL (Structured Query Language)
 - MySQL Database
+
+![top 5 layoffs per year](https://github.com/austinosho/World-Layoffs-Data/assets/166131518/c585d1d4-bc3b-4e3f-b1b8-85236da53c2c)
+
+
