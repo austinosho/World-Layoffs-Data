@@ -118,7 +118,7 @@ WHERE (a.industry IS NULL OR a.industry = '')
 AND b.industry IS NOT NULL;
 
 -- 3 companies have blank values for industry but we can trace the industry from other columns with the same company and same location
--- first we need to change the blanks to null so our subsequentupdate can function correctly
+-- first we need to change the blanks to null so our subsequent update can function correctly
 -- Update blank values in the 'Industry' column to NULL
 UPDATE layoffs_clone2
 SET industry = NULL
